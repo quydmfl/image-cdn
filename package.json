@@ -1,0 +1,17 @@
+{
+  "name": "image-cdn",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Optimize source images to responsive WebP assets and publish them with GitHub Pages.",
+  "scripts": {
+    "build": "node scripts/optimize-images.mjs",
+    "build:clean": "node scripts/optimize-images.mjs --clean"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
+  }
+}
